@@ -9,7 +9,7 @@ class Unicycle extends Cycle{
     @Override
     public void ride() {
         Cycle cycle;
-        cycle = new ride.Unicycle();
+        cycle = new wheel.Unicycle();
     }
 
     @Override
@@ -48,7 +48,7 @@ class Trycycle extends Cycle{
  class Example_Cycle{
     public static void main(String args[]){
         Cycle cycle;
-       ride.Unicycle a = new ride.Unicycle();
+       wheel.Unicycle a = new wheel.Unicycle();
         Bycycle b = new Bycycle();
         Trycycle c = new Trycycle();
         a.ride();

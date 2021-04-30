@@ -1,4 +1,4 @@
-package book;
+package wheel;
 public class Cycle2{
     public void play() {
         System.out.println("Cycle");
