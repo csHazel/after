@@ -18,6 +18,11 @@ class WeekWorker extends Employee{
         return 52*780;
     }
 }
+class DayWorker extends Employee{
+    public double earnings() {
+        return  6*230;
+    }
+}
 class Company {
 
     Employee[] employee;
@@ -37,13 +42,15 @@ class Company {
 }
 public class CompanySalary{
     public static void main (String args[]){
-        Employee [] employee=new Employee[29];
+        Employee [] employee=new Employee[32];
         for (int i=0;i<employee.length;i++){
-            if(i%3==0)
+            if(i%4==0)
+                employee[i]=new DayWorker();
+            else if(i%4==1)
                 employee[i]=new WeekWorker();
-            else if(i%3==1)
+            else if(i%4==2)
                 employee[i]=new MonthWorker();
-            else if (i%3==2)
+            else if (i%4==3)
                 employee[i]=new YearWorker();
         }
         Company company=new Company(employee);
