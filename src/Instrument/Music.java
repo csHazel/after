@@ -1,4 +1,6 @@
-package ride;
+package Instrument;
+
+import Instrument.Instrument;
 
 public class Music {
     public static void tune(Instrument i){

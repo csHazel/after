@@ -1,81 +1,53 @@
 package ride;
-
-abstract class Cycle {
-    public abstract void ride();
-    public abstract void wheel();
+public class Cycle {
+    public void play() {
+        System.out.println("Cycle");
+    }
+    public static void wheels(){
+        System.out.println("Cycle轮子数量是"+"num");
+    }
 }
-
 class Unicycle extends Cycle{
-    @Override
-    public void ride() {
-        Cycle cycle;
-        cycle = new wheel.Unicycle();
+    public void play(){
+        System.out.println("Unicycle");
     }
+    public static void wheels(){
+        System.out.println("Unicycle轮子数量是"+"1");
+    }
+}
+class Bicycle extends Cycle {
+    public void play(){
 
-    @Override
-    public void wheel() {
-        System.out.println("Unicycle有1个轮子");
+        System.out.println("Bicycle");
+    }
+    public static void wheels(){
+        System.out.println("Bicycle轮子数量是"+"2");
+    }
+}
+class Tricycle extends Cycle {
+    public void play(){
+        System.out.println("Tricycle");
+    }
+    public static void wheels(){
+        System.out.println("Tricycle轮子数量是"+"3");
     }
 }
 
-class Bycycle extends Cycle{
-    @Override
-    public void ride() {
-        Cycle cycle;
-        cycle = new Bycycle();
+class Ride {
+    public static void ride(Cycle cycle){
+        cycle.play();
     }
 
-    @Override
-    public void wheel() {
-        System.out.println("Bycycle有2个轮子");
-    }
-}
-
-class Trycycle extends Cycle{
-    @Override
-    public void ride() {
-        Cycle cycle;
-        cycle = new Trycycle();
-    }
-
-    @Override
-    public void wheel() {
-        System.out.println("Trycycle有3个轮子");
-    }
-}
-
-
- class Example_Cycle{
-    public static void main(String args[]){
-        Cycle cycle;
-       wheel.Unicycle a = new wheel.Unicycle();
-        Bycycle b = new Bycycle();
-        Trycycle c = new Trycycle();
-        a.ride();
-        b.ride();
-        c.ride();
-        if(a instanceof Cycle) {
-            System.out.println("a是Unicycle类的对象");
-        }
-        else {
-            System.out.println("a不是Unicycle类的对象");
-        }
-        if(b instanceof Cycle) {
-            System.out.println("b是Bycycle类的对象");
-        }
-        else {
-            System.out.println("b不是Bycycle类的对象");
-        }
-        if(c instanceof Cycle) {
-            System.out.println("c是Trycycle类的对象");
-        }
-        else {
-            System.out.println("c不是Trycycle类的对象");
-        }
-        a.wheel();
-        b.wheel();
-        c.wheel();
-
+    public static void main(String[] args) {
+        Unicycle unicycle = new Unicycle();
+        Bicycle bicycle = new Bicycle();
+        Tricycle tricycle = new Tricycle();
+        ride(unicycle);
+        ride(bicycle);
+        ride(tricycle);
+        Unicycle.wheels();
+        Bicycle.wheels();
+        Tricycle.wheels();
 
     }
 }

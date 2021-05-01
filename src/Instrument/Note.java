@@ -1,4 +1,4 @@
-package ride;
+package Instrument;
 
 public enum Note {
 

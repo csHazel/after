@@ -1,4 +1,4 @@
-package ride;
+package Instrument;
 
 public class Instrument {
     void play(Note n){
@@ -12,7 +12,8 @@ public class Instrument {
     public String toString(){
         return What();
     }
-}class newInstrument extends Instrument{
+}
+class newInstrument extends Instrument{
     void play(Note note) {
         System.out.println("newIns.play()" + note); }
 }
