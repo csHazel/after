@@ -16,7 +16,7 @@ public class JiaJueFrameDate extends JFrame{
         Container contentPane=getContentPane();
         contentPane.setLayout(new FlowLayout());
         this.setLocation(200,100);
-        this.setBounds(500,300,350,250);
+        this.setBounds(400,300,350,250);
 
 
         this.setVisible(true);
