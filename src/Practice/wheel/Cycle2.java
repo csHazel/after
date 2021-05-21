@@ -1,4 +1,4 @@
-package wheel;
+package Practice.wheel;
 public class Cycle2{
     public void play() {
         System.out.println("Cycle");

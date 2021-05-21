@@ -1,4 +1,4 @@
-package tom.jiafei;
+package Practice.jiafei;
 
 public class SquareEquation {
     double a,b,c;

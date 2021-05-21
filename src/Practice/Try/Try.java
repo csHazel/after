@@ -1,4 +1,4 @@
-package Try;
+package Practice.Try;
 
     public abstract class Try {
     }

@@ -1,5 +1,4 @@
-package tom.jiafei;
-import tom.jiafei.*;
+package Practice.jiafei;
 
 public class SunRise {
  public static void main(String args[]){

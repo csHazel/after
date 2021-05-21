@@ -1,4 +1,4 @@
-package ride;
+package Practice.ride;
 public class Cycle {
     public void play() {
         System.out.println("Cycle");
